@@ -1,0 +1,345 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('caminho/para/playfair-display.woff2') format('woff2');
+    /* Adicione outros formatos de fonte, como woff, ttf, etc., conforme necessário */
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*-----menu-----*/
+header{
+    background-color: #2C4783;
+     
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h1{
+    color: white;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.nav-item:not(:last-child){
+    padding-right: 58px;
+    
+    
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color:white;
+    font-weight: 400;
+    
+}
+body{
+    background-color:white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.mobile-menu-icon{/* para nao aparecer enquanto estiver tamanho padrao*/
+    display: none;
+
+}
+.mobile-menu{
+    display: none; /* para nao aparecer enquanto estiver tamanho padrao*/
+}
+@media screen and (max-width:730px){ 
+    
+    /* enquanto a tela tiver no max 730 px*/
+    
+.nav-bar{
+    padding:1.5rem 4rem;
+}
+.nav-item{/* os itens do menu nao aparecerão (inicio contato)*/
+    display: none
+}
+.mobile-menu-icon{
+    display: block;
+}
+.mobile-menu-icon button{/*mexendo nos 3 riscos*/
+    background-color: transparent;
+    border: none;
+    cursor:pointer;/*aparecer cursosr formato de clique*/
+}
+.mobile-menu ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1.2rem;
+}
+.mobile-menu .nav-item{
+    display: block;
+    padding: 1rem 2rem;
+}
+.open{
+display: block;
+}
+}
+
+/*slider------------------*/
+
+.slider{
+    width: 1200px;
+    height: 550px;
+    margin: 50px auto ;
+    
+    overflow: hidden;
+    
+}
+.slides{
+    width: 400%;
+    display: flex;
+    height: 400px;
+    
+    
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+.slide img{
+    width: 1200px;
+    height: 550px;
+}
+.second img{
+    height: 550px;
+    width: 1200px
+    
+}
+.manual-navigation{
+    position:absolute;
+    width: 1200px;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+
+}
+.manual-btn{
+    border: 2px solid white;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.manual-btn:hover{
+background-color: white;
+}
+#radio1:checked ~ .first{
+    margin-left: 0%;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+.navigation-auto div{
+    border: 2px solid blue;
+    padding: 7px;
+    border-radius:10px;
+    cursor: pointer;
+    transition: 1s;
+    margin: 5px;
+}
+.navigation-auto{
+    position: absolute;
+    width: 1200px;
+    margin-top: 491px;
+    display: flex;
+    justify-content: center;
+
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: rgb(6, 154, 240);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: rgb(6, 154, 240);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: rgb(6, 154, 240);
+}
+/*fim do slider------------------*/
+
+
+
+
+.seja{
+    width: 100%;
+    text-align: center; height: 100px; line-height: 60px;
+    font-size: large;
+    height: 60px;
+    display: block;
+    margin-top: 20px;
+    
+    
+}
+.seja h1{
+    color: #2C4783;
+    letter-spacing: 0.1em;
+    font-style: normal;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    
+}
+
+
+/*section serviços*/
+
+.Nossosserviços{
+margin-top: -50px;
+}
+.textonossos{
+width: 100%;
+background-color: #2C4783;
+text-align: center; height: 100px; line-height: 60px;
+font-size: large;
+height: 60px;
+display: block;}
+
+.textonossos h1{
+    color: white;
+    letter-spacing: 0.1em;
+    font-style: normal;
+    font-size: 30px;
+}
+.containerblocos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.blocos{
+    width: 50%;
+    background-color: white;
+    height: 580px;
+    line-height: 1.2;
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.blocos h1{
+    font-size: 40px;
+    margin-top: 155px;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    color: #2C4783;
+}
+.blocos .lavagemroupas{
+    margin-left: -100px;
+}
+.blocos .tapets{
+    margin-left: -100px;
+}
+.blocos .ting{
+    margin-left: -250px;
+}
+
+
+.blocos p{
+    margin-top: 50px;
+    max-width: 450px;
+    font-family: 'Playfair Display', serif;
+    font-size: larger;
+    }
+    
+.blocos img{
+    width: 100%;
+    height: 100%;
+    
+}
+.porque{
+    background-color: #2C4783;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.textoporque{
+width: 100%;
+text-align: center;
+
+}
+.textoporque h1{
+    padding: 75px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.12em;
+    font-size: 32px;
+    color: white;
+}
+.caixadosmotivos{
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: 100%;
+    justify-content: center;
+    
+    
+}
+.textomotivos{
+    max-width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 130px;  
+    
+    
+}
+.textomotivos:not(:first-child){
+    padding-left: 200px;
+}
+.textomotivos h2{
+    max-width: 150px;
+    color: white;
+    font-size: 22px;
+
+}
+.imagensfinais{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.asimagens{
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 250px;
+    
+}
+.imagensdebaixo{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+    
+    
+      
+    
