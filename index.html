@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Laveze Lavanderias</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Logo<img src="" alt="logolaveze"></h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menushow()"><img class="icon" src="/imgs/menu.svg" alt=""></button>
+            </div>
+
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="mobile-menu-icon">
+                <button><img class="icon" src="/imgs/menu.svg" alt=""></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="secao">
+        <div class="seja">
+            <h1>SEJA BEM-VINDO AO NOSSO SITE!</h1>
+        </div>
+
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <!--slide images-->
+                <div class="slide first">
+                    <img src="/imgs/parteexterna.jpg" alt="" class="imggrande">
+                </div>
+                <div class="second">
+                    <img src="/imgs/fotocomfuncionaria.jpg" alt="" class="imgpassadoria">
+                </div>
+                <div class="slide">
+                    <img src="/imgs/fotointeriorlav.jpg" alt="" class="imggrande">
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+        </div>
+    </section>
+    <section class="Nossosserviços">
+        <div class="textonossos">
+            <h1>NOSSOS SERVIÇOS</h1>
+        </div>
+        <div class="containerblocos">
+            <div class="blocos">
+                <h1 class="lavagemroupas">Lavagem de Roupas</h1>
+                <p>Lavamos e passamos todos os tipo de roupas, sejam elas de cama, social, vestidos, casacos e do dia a dia sempre com nossos produtos especiais.</p>
+            </div>
+            <div class="blocos">
+                <img src="/imgs/mao.jpg" alt="imagemroupas">
+            </div>
+            <div class="blocos">
+                <img src="/imgs/tapete.jpg" alt="imagemtapete/acessorios">
+            </div>
+            <div class="blocos">
+                <h1>Limpeza de Tapetes e Acessórios</h1>
+                <p class="tapets">Realizamos a limpeza de tapetes de todos os tamanhos. Além disso lavamos sapatos, tênis, bonés, bolsas, mochilas e malas.</p>
+            </div>
+            <div class="blocos">
+                <h1 class="ting">Tingimento</h1>
+                <p>Também possuimos o serviço de tingimento para as suas peças que estão precisando de uma cor!</p>
+            </div>
+            <div class="blocos">
+                <img src="/imgs/cabidescoloridas.avif" alt="imagemtingimentocamisetas/bermudas/calças/camisas">
+            </div>
+        </div>
+    </section>
+    <div class="porque">
+        <div class="textoporque">
+            <h1>POR QUE CONTRATAR NOSSOS SERVIÇOS?</h1>
+        </div>
+        <div class="caixadosmotivos">
+        <div class="textomotivos"><h2 class="motivos">-Profissionais extremamente qualificados</h2></div>
+        <div class="textomotivos"><h2 class="motivos">-Limpeza ambientalmente amigável</h2></div>
+        <div class="textomotivos"><h2 class="motivos">-Máximo cuidado com suas peças</h2></div>
+        <div class="textomotivos"><h2 class="motivos">-Oferecemos coleta e entrega!</h2></div>
+        </div>
+    
+    </div>
+    <div class="imagensfinais">
+        <div class="asimagens"><img src="/imgs/casal c roupa.jpg" class="imagensdebaixo"></div>
+        <div class="asimagens"><img src="/imgs/toalhas.jpeg" class="imagensdebaixo"></div>
+        <div class="asimagens"><img src="/imgs/pilhacolorida.jpg" class="imagensdebaixo"></div>
+        <div class="asimagens"><img src="/imgs/cesta.webp" class="imagensdebaixo"></div>
+        <div class="asimagens"><img src="/imgs/ternosazuis.jpg" class="imagensdebaixo"></div>
+    </div>
+    <script src="/js/javascript.js"></script>
+    <footer>
+        <div class="todoofooter">
+            <div class="blocologo"></div>
+            <div class="blocoredes"></div>
+            <div class="blococontato"></div>
+            <div class="blocoendereco"></div>
+        </div>
+    </footer>
+</body>
+<style>@font-face {
+    font-family: 'Playfair Display';
+    src: url('caminho/para/playfair-display.woff2') format('woff2');
+    /* Adicione outros formatos de fonte, como woff, ttf, etc., conforme necessário */
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*-----menu-----*/
+header{
+    background-color: #2C4783;
+     
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h1{
+    color: white;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.nav-item:not(:last-child){
+    padding-right: 58px;
+    
+    
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color:white;
+    font-weight: 400;
+    
+}
+body{
+    background-color:white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.mobile-menu-icon{/* para nao aparecer enquanto estiver tamanho padrao*/
+    display: none;
+
+}
+.mobile-menu{
+    display: none; /* para nao aparecer enquanto estiver tamanho padrao*/
+}
+@media screen and (max-width:730px){ 
+    
+    /* enquanto a tela tiver no max 730 px*/
+    
+.nav-bar{
+    padding:1.5rem 4rem;
+}
+.nav-item{/* os itens do menu nao aparecerão (inicio contato)*/
+    display: none
+}
+.mobile-menu-icon{
+    display: block;
+}
+.mobile-menu-icon button{/*mexendo nos 3 riscos*/
+    background-color: transparent;
+    border: none;
+    cursor:pointer;/*aparecer cursosr formato de clique*/
+}
+.mobile-menu ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1.2rem;
+}
+.mobile-menu .nav-item{
+    display: block;
+    padding: 1rem 2rem;
+}
+.open{
+display: block;
+}
+}
+
+/*slider------------------*/
+
+.slider{
+    width: 1200px;
+    height: 550px;
+    margin: 50px auto ;
+    
+    overflow: hidden;
+    
+}
+.slides{
+    width: 400%;
+    display: flex;
+    height: 400px;
+    
+    
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+.slide img{
+    width: 1200px;
+    height: 550px;
+}
+.second img{
+    height: 550px;
+    width: 1200px
+    
+}
+.manual-navigation{
+    position:absolute;
+    width: 1200px;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+
+}
+.manual-btn{
+    border: 2px solid white;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.manual-btn:hover{
+background-color: white;
+}
+#radio1:checked ~ .first{
+    margin-left: 0%;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+.navigation-auto div{
+    border: 2px solid blue;
+    padding: 7px;
+    border-radius:10px;
+    cursor: pointer;
+    transition: 1s;
+    margin: 5px;
+}
+.navigation-auto{
+    position: absolute;
+    width: 1200px;
+    margin-top: 491px;
+    display: flex;
+    justify-content: center;
+
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: rgb(6, 154, 240);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: rgb(6, 154, 240);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: rgb(6, 154, 240);
+}
+/*fim do slider------------------*/
+
+
+
+
+.seja{
+    width: 100%;
+    text-align: center; height: 100px; line-height: 60px;
+    font-size: large;
+    height: 60px;
+    display: block;
+    margin-top: 20px;
+    
+    
+}
+.seja h1{
+    color: #2C4783;
+    letter-spacing: 0.1em;
+    font-style: normal;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    
+}
+
+
+/*section serviços*/
+
+.Nossosserviços{
+margin-top: -50px;
+}
+.textonossos{
+width: 100%;
+background-color: #2C4783;
+text-align: center; height: 100px; line-height: 60px;
+font-size: large;
+height: 60px;
+display: block;}
+
+.textonossos h1{
+    color: white;
+    letter-spacing: 0.1em;
+    font-style: normal;
+    font-size: 30px;
+}
+.containerblocos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.blocos{
+    width: 50%;
+    background-color: white;
+    height: 580px;
+    line-height: 1.2;
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.blocos h1{
+    font-size: 40px;
+    margin-top: 155px;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    color: #2C4783;
+}
+.blocos .lavagemroupas{
+    margin-left: -100px;
+}
+.blocos .tapets{
+    margin-left: -100px;
+}
+.blocos .ting{
+    margin-left: -250px;
+}
+
+
+.blocos p{
+    margin-top: 50px;
+    max-width: 450px;
+    font-family: 'Playfair Display', serif;
+    font-size: larger;
+    }
+    
+.blocos img{
+    width: 100%;
+    height: 100%;
+    
+}
+.porque{
+    background-color: #2C4783;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.textoporque{
+width: 100%;
+text-align: center;
+
+}
+.textoporque h1{
+    padding: 75px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.12em;
+    font-size: 32px;
+    color: white;
+}
+.caixadosmotivos{
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: 100%;
+    justify-content: center;
+    
+    
+}
+.textomotivos{
+    max-width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 130px;  
+    
+    
+}
+.textomotivos:not(:first-child){
+    padding-left: 200px;
+}
+.textomotivos h2{
+    max-width: 150px;
+    color: white;
+    font-size: 22px;
+
+}
+.imagensfinais{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.asimagens{
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 250px;
+    
+}
+.imagensdebaixo{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+    
+    
+      
+</style>
+<script>
+    //menu responsivo---------------------------------------------------
+function menushow(){
+    var menuMobile = document.querySelector('.mobile-menu');
+    if (menuMobile.classList.contains('open')){
+        menuMobile.classList.remove('open')
+        document.querySelector('.icon').src="/imgs/menu.svg"
+    }
+        else{
+            menuMobile.classList.add('open')
+            document.querySelector('.icon').src="/imgs/closewhite.svg"
+        }
+    }
+    // troca de imagens automatica no slider
+    let count = 1;
+    document.getElementById("radio1").checked = true;
+    
+    setInterval(
+        function aciona(){proximaimagem();},5000// milisegundos
+    )
+    
+    function proximaimagem(){
+        count ++;
+        if(count>3){
+            count = 1;
+        }
+        document.getElementById("radio"+count).checked = true;
+    }
+</script>
+</html>
